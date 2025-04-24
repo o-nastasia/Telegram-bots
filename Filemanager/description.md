@@ -1,0 +1,1 @@
+This bot saves documents and pictures sent to a telegram-chat to the Yandex Disk. It creates a folder for every chat (each folder has the same name as the chat) and saves docs and pictures to the corresponding folder. The bot is deployed on Yandex Cloud using the cloud function and uses YC-bucket for temporary object storage.
