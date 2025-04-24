@@ -20,7 +20,7 @@ def handle_docs(message):
 	file_info = bot.get_file(message.document.file_id)
 	file_name = message.document.file_name
 	downloaded_file = bot.download_file(file_info.file_path)
-	storage = "<STORAGE_PATH" + file_name
+	storage = "<SERVER_STORAGE_PATH>" + file_name
 	destination = dest(folder, file_name)
 
 	with open(storage, 'wb') as temp:
@@ -40,7 +40,7 @@ def handle_photos(message):
 		file_name = file_name.split('/')[-1]
 
 	downloaded_photo = bot.download_file(file_info.file_path)
-	storage = "<STORAGE_PATH>" + file_name
+	storage = "<SERVER_STORAGE_PATH>" + file_name
 	destination = dest(folder, file_name)
 
 	with open(storage, 'wb') as temp:
